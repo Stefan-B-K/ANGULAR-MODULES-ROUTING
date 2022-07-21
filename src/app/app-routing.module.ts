@@ -14,6 +14,16 @@ const routes: Routes = [
         loadChildren: () => import('./collections/collections.module')
             .then(m => m.CollectionsModule )
     },
+    {
+        path: Pages.views,
+        loadChildren: () => import('./views/views.module')
+            .then(m => m.ViewsModule )
+    },
+    {
+        path: Pages.mods,
+        loadChildren: () => import('./mods/mods.module')
+            .then(m => m.ModsModule )
+    },
     { path: '', component: AppComponent },
     { path: '**', component: AppComponent }
 ];

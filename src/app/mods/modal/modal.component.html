@@ -1,0 +1,16 @@
+<div (click)="hideModal()" class="ui dimmer visible active">
+    <div (click)="$event.stopPropagation()" class="ui modal visible active">
+        <i (click)="hideModal()" class="close icon"></i>
+        <div class="header">
+            {{ config.title }}
+        </div>
+        <div class="content">
+            <p>{{ config.content }}</p>
+        </div>
+        <div *ngIf="config.closeButton" class="actions">
+            <button (click)="hideModal()" class="ui button">
+                {{ config.buttonCaption }}
+            </button>
+        </div>
+    </div>
+</div>

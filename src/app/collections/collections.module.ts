@@ -5,9 +5,10 @@ import { CollectionsRoutingModule } from './collections-routing.module';
 import { CollectionsHomeComponent } from './collections-home/collections-home.component';
 import { TableComponent } from './table/table.component';
 import { SharedModule } from "../shared/shared.module";
-import { TabBiographyComponent } from './tab-biography/tab-biography.component';
-import { TabCompaniesComponent } from './tab-companies/tab-companies.component';
-import { TabPartnersComponent } from './tab-partners/tab-partners.component';
+import { TabBiographyComponent } from './tabs/tabs-biography/tab-biography.component';
+import { TabCompaniesComponent } from './tabs/tabs-companies/tab-companies.component';
+import { TabPartnersComponent } from './tabs/tabs-partners/tab-partners.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TabPartnersComponent } from './tab-partners/tab-partners.component';
         TableComponent,
         TabBiographyComponent,
         TabCompaniesComponent,
-        TabPartnersComponent
+        TabPartnersComponent,
+        TabsComponent
     ],
     imports: [
         CommonModule,

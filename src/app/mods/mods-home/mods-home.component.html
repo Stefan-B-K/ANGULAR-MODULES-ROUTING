@@ -1,0 +1,10 @@
+<app-comp-title>Modal Component</app-comp-title>
+<button (click)="toggleModal()">Show Modal</button>
+<app-modal
+    [config]="modalConfig"
+    (close)="toggleModal()"
+    *ngIf="showModal"
+></app-modal>
+
+<app-comp-title>Accordion Component</app-comp-title>
+<app-accordion [items]="items"></app-accordion>

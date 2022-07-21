@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { CollectionsTabs } from "../../Pages";
-
-
 
 @Component({
     selector: 'app-collections-home',
@@ -21,7 +18,5 @@ export class CollectionsHomeComponent {
         headers: ['First Name'],
         classNames: 'striped celled',
     }
-
-    tabRoutes = CollectionsTabs
 
 }

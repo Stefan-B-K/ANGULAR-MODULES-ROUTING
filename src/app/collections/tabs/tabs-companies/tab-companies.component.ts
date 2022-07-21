@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tab-companies',
+  selector: 'app-tabs-companies',
   templateUrl: './tab-companies.component.html',
   styleUrls: ['./tab-companies.component.css']
 })

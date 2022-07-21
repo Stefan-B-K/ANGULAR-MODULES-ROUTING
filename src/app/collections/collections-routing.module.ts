@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CollectionsHomeComponent } from "./collections-home/collections-home.component";
-import { TabBiographyComponent } from "./tab-biography/tab-biography.component";
-import { TabCompaniesComponent } from "./tab-companies/tab-companies.component";
-import { TabPartnersComponent } from "./tab-partners/tab-partners.component";
+import { TabBiographyComponent } from "./tabs/tabs-biography/tab-biography.component";
+import { TabCompaniesComponent } from "./tabs/tabs-companies/tab-companies.component";
+import { TabPartnersComponent } from "./tabs/tabs-partners/tab-partners.component";
 import { CollectionsTabs } from "../Pages";
 
 const routes: Routes = [

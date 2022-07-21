@@ -1,0 +1,33 @@
+<div class="ui grid">
+    <div class="four wide column">
+        <div class="ui vertical fluid tabular menu">
+            <a
+                [routerLink]="'./' + tabRoutes.biography"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="item">
+                Biography
+            </a>
+            <a
+                [routerLink]="'./' + tabRoutes.companies"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="item">
+                Companies
+            </a>
+            <a
+                [routerLink]="'./' + tabRoutes.partners"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="item">
+                Partners
+            </a>
+
+        </div>
+    </div>
+    <div class="twelve wide stretched column">
+        <div class="ui segment">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,19 +1,35 @@
 <div class="ui container">
     <div class="ui top attached tabular menu">
+
         <a [routerLink]="routes.elements"
            routerLinkActive="active"
            class="item "
         >Elements</a>
+
         <a [routerLink]="routes.collections"
            routerLinkActive="active"
            class="item"
         >Components</a>
+
+        <a [routerLink]="routes.views"
+           routerLinkActive="active"
+           class="item"
+        >Views</a>
+
+        <a [routerLink]="routes.mods"
+           routerLinkActive="active"
+           class="item"
+        >Mods</a>
+
         <div class="right menu">
             <a routerLink="/" class="ui item">
                 Home
             </a>
         </div>
+
     </div>
+
+
     <div class="ui bottom attached segment">
 
         <div *ngIf="showHome">
