@@ -1,0 +1,7 @@
+ng-content:empty {
+    display: none;
+}
+
+.header:empty {
+    display: none;
+}

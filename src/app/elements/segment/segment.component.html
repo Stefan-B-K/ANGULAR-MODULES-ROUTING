@@ -1,0 +1,7 @@
+<div class="ui placeholder segment">
+    <div class="ui icon header">
+        <i *ngIf="icon" class="{{ icon }} icon"></i>
+        <ng-content></ng-content>
+    </div>
+    <div *ngIf="showButton" class="ui primary button">{{ buttonCaption }}</div>
+</div>
